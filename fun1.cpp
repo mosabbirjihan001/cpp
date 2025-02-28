@@ -28,9 +28,7 @@ int main() {
 
     ll F, X0;
     cin >> F >> X0;
-    F--; // Convert 1-based index to 0-based
-
-    // Compute f_F^K(x)
+    F--; 
     auto [finalA, finalB] = functionPower(A[F], B[F], M, K);
     ll result = (finalA * X0 + finalB) % M;
 
